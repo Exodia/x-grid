@@ -8,8 +8,12 @@
 
 <style>
     #header, #footer {
-       height: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 60px;
         background: #8699a4;
+        color: #fff;
+        text-align: center;
     }
 
     #main {
@@ -18,10 +22,11 @@
     }
 
     #side {
-        height: 190px;
+        height: 390px;
         margin: 10px 0;
-        line-height: 190px;
+        line-height: 390px;
         font-size: 30px;
+        border-radius: 3px;
         text-align: center;
         background: #C6E746;
     }
@@ -41,17 +46,18 @@
 <body>
 
 <div id="page">
-    <div id="header" class="row">
-
+    <div id="header">
+        Header
     </div>
 
     <div id="main" class="row">
         <div id="content" class="span9">
+
             <div class="row show-grid">
                 <div class="span1">1</div>
                 <div class="span1">1</div>
                 <div class="span1">1</div>
-                <div class="span1" data-original-title="" title="">1</div>
+                <div class="span1">1</div>
                 <div class="span1">1</div>
                 <div class="span1">1</div>
                 <div class="span1">1</div>
@@ -71,28 +77,36 @@
                 <div class="span9">9</div>
             </div>
 
-            <div class="bs-docs-grid">
-                <div class="row show-grid">
-                    <div class="span4" data-original-title="" title="">4</div>
-                    <div class="span3 offset2">3 offset 2</div>
-                </div><!-- /row -->
-                <div class="row show-grid">
-                    <div class="span3 offset1" data-original-title="" title="">3 offset 1</div>
-                    <div class="span3 offset2">3 offset 2</div>
-                </div><!-- /row -->
-                <div class="row show-grid">
-                    <div class="span6 offset3">6 offset 3</div>
-                </div><!-- /row -->
+            <div class="row show-grid">
+                <div class="span4" data-original-title="" title="">4</div>
+                <div class="span3 offset-2">3 offset-2</div>
             </div>
+            <!-- /row -->
+            <div class="row show-grid">
+                <div class="span3 offset1">3 offset1</div>
+                <div class="span3 offset2">3 offset 2</div>
+            </div>
+            <!-- /row -->
+            <div class="row show-grid">
+                <div class="span6 offset3">6 offset 3</div>
+            </div>
+            <!-- /row -->
+
+            <div class="row show-grid">
+                <div class="span2">2</div>
+                <div class="span2 pull2">span2 pull2</div>
+                <div class="span2">2</div>
+            </div>
+
         </div>
         <div id="side" class="span3">
-             Side
+            Side Span3
         </div>
     </div>
 
 
-    <div id="footer" class="row">
-
+    <div id="footer">
+        Footer
     </div>
 </div>
 

@@ -83,54 +83,90 @@
     *display: inline;
     zoom: 1;
     width: 940px; }
-  .row .offset-11 {
-    margin-left: -880px; }
-  .row .offset-10 {
-    margin-left: -800px; }
-  .row .offset-9 {
-    margin-left: -720px; }
-  .row .offset-8 {
-    margin-left: -640px; }
-  .row .offset-7 {
-    margin-left: -560px; }
-  .row .offset-6 {
-    margin-left: -480px; }
-  .row .offset-5 {
-    margin-left: -400px; }
-  .row .offset-4 {
-    margin-left: -320px; }
-  .row .offset-3 {
-    margin-left: -240px; }
-  .row .offset-2 {
-    margin-left: -160px; }
-  .row .offset-1 {
-    margin-left: -80px; }
-  .row .offset0 {
-    margin-left: 0px; }
   .row .offset1 {
     margin-left: 80px; }
+  .row .offset-1 {
+    margin-right: 80px; }
   .row .offset2 {
     margin-left: 160px; }
+  .row .offset-2 {
+    margin-right: 160px; }
   .row .offset3 {
     margin-left: 240px; }
+  .row .offset-3 {
+    margin-right: 240px; }
   .row .offset4 {
     margin-left: 320px; }
+  .row .offset-4 {
+    margin-right: 320px; }
   .row .offset5 {
     margin-left: 400px; }
+  .row .offset-5 {
+    margin-right: 400px; }
   .row .offset6 {
     margin-left: 480px; }
+  .row .offset-6 {
+    margin-right: 480px; }
   .row .offset7 {
     margin-left: 560px; }
+  .row .offset-7 {
+    margin-right: 560px; }
   .row .offset8 {
     margin-left: 640px; }
+  .row .offset-8 {
+    margin-right: 640px; }
   .row .offset9 {
     margin-left: 720px; }
+  .row .offset-9 {
+    margin-right: 720px; }
   .row .offset10 {
     margin-left: 800px; }
+  .row .offset-10 {
+    margin-right: 800px; }
   .row .offset11 {
     margin-left: 880px; }
+  .row .offset-11 {
+    margin-right: 880px; }
   .row .offset12 {
     margin-left: 960px; }
+  .row .offset-12 {
+    margin-right: 960px; }
+  .row .pull1 {
+    position: relative;
+    left: -80px; }
+  .row .pull2 {
+    position: relative;
+    left: -160px; }
+  .row .pull3 {
+    position: relative;
+    left: -240px; }
+  .row .pull4 {
+    position: relative;
+    left: -320px; }
+  .row .pull5 {
+    position: relative;
+    left: -400px; }
+  .row .pull6 {
+    position: relative;
+    left: -480px; }
+  .row .pull7 {
+    position: relative;
+    left: -560px; }
+  .row .pull8 {
+    position: relative;
+    left: -640px; }
+  .row .pull9 {
+    position: relative;
+    left: -720px; }
+  .row .pull10 {
+    position: relative;
+    left: -800px; }
+  .row .pull11 {
+    position: relative;
+    left: -880px; }
+  .row .pull12 {
+    position: relative;
+    left: -960px; }
 
 _:-o-prefocus, .row {
   font-size: 0.5px; }

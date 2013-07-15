@@ -23,6 +23,7 @@
 
   @include grid-span-x($gridColumns, $gridColumnWidth, $gridGutterWidth);
   @include grid-offset-x($gridColumns, $gridColumnWidth, $gridGutterWidth);
+  @include grid-pull-x($gridColumns, $gridColumnWidth, $gridGutterWidth);
 }
 
 //For Opera 9.5-12
