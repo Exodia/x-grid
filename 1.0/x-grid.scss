@@ -1,0 +1,32 @@
+@import "var";
+@import "mixin";
+
+.row {
+  display: block;
+  font-size: 0 !important;
+  text-align: justify !important;
+
+  //For IE
+  text-justify: distribute-all-lines;
+  zoom: 1;
+
+  & * {
+    text-align: left;
+    font-size: medium;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
+  @include grid-span-x($gridColumns, $gridColumnWidth, $gridGutterWidth);
+  @include grid-offset-x($gridColumns, $gridColumnWidth, $gridGutterWidth);
+}
+
+//For Opera 9.5-12
+_:-o-prefocus, .row {
+  font-size: 0.5px;
+}
+

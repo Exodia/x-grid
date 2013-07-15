@@ -1,0 +1,37 @@
+@mixin grid-span-x($gridColumns, $gridColumnWidth, $gridGutterWidth) {
+  @for $i from 1 through $gridColumns {
+    .span#{$i} {
+      @include grid-span($i, $gridColumnWidth, $gridGutterWidth);
+    }
+  }
+}
+
+@mixin grid-offset-x($gridColumns, $gridColumnWidth, $gridGutterWidth) {
+  @for $i from 1 through $gridColumns {
+    .offset#{$i} {
+      @include grid-offset-left($i, $gridColumnWidth, $gridGutterWidth);
+    }
+
+    .offset-#{$i} {
+      @include grid-offset-right($i, $gridColumnWidth, $gridGutterWidth);
+    }
+  }
+}
+
+@mixin grid-span($columns, $gridColumnWidth, $gridGutterWidth) {
+  display: inline-block;
+  vertical-align: top;
+
+  *display: inline;
+  zoom: 1;
+
+  width: ($gridColumnWidth * $columns) + ($gridGutterWidth * ($columns - 1));
+}
+
+@mixin grid-offset-left($columns, $gridColumnWidth, $gridGutterWidth) {
+  margin-left: ($gridColumnWidth + $gridGutterWidth) * $columns;
+}
+
+@mixin grid-offset-right($columns, $gridColumnWidth, $gridGutterWidth) {
+  margin-right: ($gridColumnWidth + $gridGutterWidth) * $columns;
+}

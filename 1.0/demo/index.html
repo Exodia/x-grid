@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>demo标题</title>
+    <link rel="stylesheet" href="../build/x-grid.css"/>
+</head>
+
+<style>
+    #header, #footer {
+       height: 80px;
+        background: #8699a4;
+    }
+
+    #main {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    #side {
+        height: 190px;
+        margin: 10px 0;
+        line-height: 190px;
+        font-size: 30px;
+        text-align: center;
+        background: #C6E746;
+    }
+
+    .show-grid {
+        margin: 10px auto;
+    }
+
+    .show-grid [class*="span"] {
+        background-color: #eee;
+        text-align: center;
+        border-radius: 3px;
+        min-height: 40px;
+        line-height: 40px;
+    }
+</style>
+<body>
+
+<div id="page">
+    <div id="header" class="row">
+
+    </div>
+
+    <div id="main" class="row">
+        <div id="content" class="span9">
+            <div class="row show-grid">
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1" data-original-title="" title="">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+            </div>
+            <div class="row show-grid">
+                <div class="span2">2</div>
+                <div class="span3">3</div>
+                <div class="span4">4</div>
+            </div>
+            <div class="row show-grid">
+                <div class="span4" data-original-title="" title="">4</div>
+                <div class="span5">5</div>
+            </div>
+            <div class="row show-grid">
+                <div class="span9">9</div>
+            </div>
+
+            <div class="bs-docs-grid">
+                <div class="row show-grid">
+                    <div class="span4" data-original-title="" title="">4</div>
+                    <div class="span3 offset2">3 offset 2</div>
+                </div><!-- /row -->
+                <div class="row show-grid">
+                    <div class="span3 offset1" data-original-title="" title="">3 offset 1</div>
+                    <div class="span3 offset2">3 offset 2</div>
+                </div><!-- /row -->
+                <div class="row show-grid">
+                    <div class="span6 offset3">6 offset 3</div>
+                </div><!-- /row -->
+            </div>
+        </div>
+        <div id="side" class="span3">
+             Side
+        </div>
+    </div>
+
+
+    <div id="footer" class="row">
+
+    </div>
+</div>
+
+
+</body>
+</html>
